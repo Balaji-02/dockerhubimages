@@ -1,2 +1,4 @@
 # dockerhubimages
-Create the image Publish the image to docker hub Github actions
+Create the image 
+Publish the image to docker hub 
+Github actions
