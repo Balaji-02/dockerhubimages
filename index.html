@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Even Odd Checker</title>
+    <style>
+        .main{
+            position: relative;
+            
+            translate:10% 15%;
+            border: 1px solid black;
+            width: fit-content;
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body style="background-color:rgb(123, 200, 200);">
+    <div class="main" style="display:flex; justify-content:center; align-items:center; flex-direction:column;">
+        <h1 style="color: blue;">Even Odd Checker</h1>
+        
+        <input type="text" id="numberInput" placeholder="Enter a number"/>
+        <button style="margin-top: 15px;"onclick="checkEvenOrOdd()">Check</button>
+        <span style="display: inline-flex; gap: 18px;">
+            <h3>RESULT</h3>
+            <p id="result" style="width:100px; height:20px; text-align: center; background-color: rgb(175, 228, 31); margin: auto auto;"></p>
+        </span>
+    </div>
+    
+    <script>
+      function checkEvenOrOdd() {
+        var number = document.getElementById("numberInput").value;
+        if (number % 2 === 0) {
+          document.getElementById("result").innerText = number + " is even";
+        } else {
+          document.getElementById("result").innerText = number + " is odd";
+        }
+      }
+    </script>
+  </body>
+</html>
